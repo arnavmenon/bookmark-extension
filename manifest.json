@@ -3,11 +3,16 @@
     "description": "Extension to organize bookmarks",
     "version": "0.1.0",
     "manifest_version": 2,
-    "icons": { "128": "icon_128.png"},
+    "icons": { 
+        "128": "icon_128.png",
+        "16": "icon_16.png"
+    },
     "browser_action": {
+        "defaut_icon": "icon_16.png",
         "default_popup": "popup.html"
     },
     "permissions": [
-        "tabs"
-    ]
+        "contextMenus", 
+        "tabs"],
+    "background": {"page": "background.html"}
 }
